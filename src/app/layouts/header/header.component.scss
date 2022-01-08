@@ -1,0 +1,91 @@
+.dropdown-toggle::after {
+    display: none !important;
+  }
+  
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .mat-nav-list .mat-list-item {
+    margin: 25px 0px !important;
+  }
+  
+  .mat-list-base {
+    padding-top: 0px !important;
+  }
+  
+  .mat-drawer {
+    top: 135px !important;
+    width: 65%;
+    bottom: 0px;
+    left: 0px !important;
+  }
+  
+    .header{
+      z-index: 100 !important;
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+    }
+  
+  .header {
+    z-index: 1000 !important;
+  }
+  
+  .header-card {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    // border-radius: 0 0 10px 10px !important;
+    padding: 8px 10px 16px !important;
+  }
+  
+  .nr-logo-header {
+    height: 45px;
+    position: relative;
+    top: 0px;
+  }
+  
+  .user-profile-right-sidenav {
+    box-shadow: 0 2px 2px #ddd;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+  }
+  .bg-dull {
+    position: absolute !important;
+    z-index: 1000 !important;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .not-menu {
+      text-align: center;
+      // width: 100%;
+    }
+    .casttree-logo-header {
+      display: none;
+    }
+    .header-card {
+      width: 100%;
+    }
+    .header-search {
+      width: calc(100% - 45px);
+      margin-right: 10px;
+    }
+    .search-bar {
+      margin-left: 0px !important;
+    }
+  }
+  
+  .not-menu-list:last-child {
+    float: inherit;
+  }
+  
+  .not-notification{
+    margin-top: 10px;
+  }

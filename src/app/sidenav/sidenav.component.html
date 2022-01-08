@@ -1,0 +1,24 @@
+<app-header></app-header>
+<mat-sidenav-container class="example-container abc" style="margin-top: 80px">
+  <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [(opened)]="opened" (opened)="events.push('open!')"
+    (closed)="events.push('close!')">
+    <div style="padding: 20px 10px">
+      <div class="mb-4 mt-2 not-pointer not-router" routerLinkActive="menuactive" [routerLink]="['/post']">
+        <i class="feather not-text-lg not-top-min icon-hard-drive  ct-router" aria-hidden="true"></i>
+        <span class="ml-2 sidenav-text">
+          <b>Posts</b>
+        </span>
+      </div>
+
+      <div class="mb-4 mt-2 not-pointer not-router" routerLinkActive="menuactive" [routerLink]="['/photos']">
+        <i class="feather not-text-lg not-top-min icon-box ct-router" aria-hidden="true"></i>
+        <span class="ml-2 sidenav-text">
+          <b>Photo Album</b>
+        </span>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content id="side-nav-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

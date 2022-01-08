@@ -1,0 +1,14 @@
+<div class="container mt-3">
+    <div class="row mb-5 ">
+        <div class="col-12 col-lg-12 col-md-12">
+            <div class="mb-3">
+                <h3 class="not-text-lg text-dark">
+                    <b> {{ single_detail?.userId }}. {{ single_detail?.title }}</b>
+                </h3>
+            </div>
+            <div class="">
+                <p [innerHTML]="single_detail?.body" class="not-text-sm text-dark"></p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.padding-left-8 {
+    padding-left: 8px !important;
+}
+
+.open-close-btn{
+    display: none;
+}
+
+.ct-sidemenu-btn{
+    position: absolute;
+    z-index: 3;
+    left: 8px;
+    top: 10px;
+}
+  
+.example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+}
+
+// .mat-drawer-content{
+//     margin-left: calc(100% - 76%);
+// }
+
+.mat-drawer{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 220px;
+    position: fixed;
+    top: 80px;
+}
+
+.not-router{
+    i{
+        padding-left: 8px;
+    }
+}
+
+.ct-menu{
+    margin-top: 20px;
+}
+.menuactive {
+    background: #3781c2;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 8px !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .open-close-btn{
+        display: inline-block;
+    }
+
+    .example-container {
+        margin-top: 45px !important;
+    }
+
+    .mat-drawer-content{
+        top: 35px;
+    }
+
+    .ct-menu{
+        margin-top: 0px;
+    }
+
+    .mat-drawer{
+        // width: 75%;
+        top: 75px;
+    }
+
+    .header-left{
+        text-align: center;
+    }
+    .nr-logo-header{
+       display: none;   
+    }
+    .header-card{
+        width: 100%;
+    }
+    .header-search{
+        width: 100%;
+    }
+    .search-bar{
+        margin-left: 0px !important;
+    }
+}
+
+// @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+//     .mat-drawer{
+//         // width: 35%;
+//     }
+// }
+
+// @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+//     .mat-drawer{
+//         // width: 25%;
+//     }
+// }

@@ -1,1 +1,164 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// text -size
+.text-lg {
+    font-size: 20px !important;
+  }
+  
+  .heading {
+    font-size: 22px;
+  }
+  
+  .text-xl {
+    font-size: 24px;
+  }
+  
+  .text-xxl {
+    font-size: 30px;
+  }
+  .text-xxxl {
+    font-size: 3rem;
+  }
+  
+  .text-m {
+    font-size: 2rem;
+  }
+  
+  .text-sm {
+    font-size: 17px !important;
+  }
+  
+  .text-xs {
+    font-size: 1rem;
+  }
+  
+  .sidenav-text {
+    font-size: 14px;
+  }
+  
+  .text-xxs {
+    font-size: 13px;
+  }
+  
+  .text-xxxs {
+    font-size: 11px;
+  }
+  
+  .text-end {
+    text-align: end !important;
+  }
+
+  //login
+  .login-bg {
+    background: url("../src/assets/img/login_bg.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  .login-card {
+    position: absolute !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    z-index: 30;
+    width: 65%;
+  }
+
+  .border-right {
+    border-right: none !important;
+  }
+  .not-full-width {
+    width: 100% !important;
+  }
+
+//post list
+
+  .card-shadow {
+    box-shadow: 0 0 15px #d3d3d3 !important;
+    border-radius: 15px !important;
+  }
+
+  .not-text-wrap-1line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 100%;
+  }
+  .spinner-item{
+    display: grid; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.not-pointer {
+    cursor: pointer;
+  }
+  .not-router {
+    outline: unset !important;
+  }
+  .not-hover-line:hover {
+    text-decoration: underline;
+  } 
+  
+  .not-user-avatar {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+  }
+  
+  .not-user-avatar-sm {
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+  }
+
+  .not-menu {
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  
+  .not-menu-list {
+    display: inline-block;
+    margin: auto 18px;
+    font-size: 20px;
+  }
+  
+  .not-menu-list:last-child {
+    margin-right: 0px;
+  }
+
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position: 468px 0;
+    }
+  }
+  
+
+  .animated-title-loader {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 10px;
+    position: relative;
+  }  
+
+  @media only screen and (max-width: 600px) {
+    .login-right {
+      display: none;
+    }
+}
