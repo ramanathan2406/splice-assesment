@@ -21,7 +21,7 @@
         </div>
     </div>
 </div>
-<div infinite-scroll [fromRoot]="true" [infiniteScrollContainer]="''" [infiniteScrollDistance]="2"
+<div infinite-scroll [fromRoot]="true" infiniteScrollContainer=".mat-sidenav-content" [infiniteScrollDistance]="2"
     [infiniteScrollThrottle]="50" [infiniteScrollDisabled]="isFullListDisplayed" [scrollWindow]="true"
     (scrolled)="photoslist('infinite')">
     <div class="container">

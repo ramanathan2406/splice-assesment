@@ -6,9 +6,9 @@
     </div>
 </div>
 
-<div infinite-scroll [fromRoot]="true" [infiniteScrollContainer]="''" [infiniteScrollDistance]="2"
+<div infinite-scroll [fromRoot]="true" infiniteScrollContainer=".mat-sidenav-content" [infiniteScrollDistance]="2"
   [infiniteScrollThrottle]="50" [infiniteScrollDisabled]="isFullListDisplayed" [scrollWindow]="true" (scrolled)="postlist('infinite')">
-  <div class="container">
+  <div class="container" >
     <div class="row mb-5">
       <div class="col-12 col-lg-4 col-md-6" *ngFor="let post of itemsToShow;let i=index">
         <mat-card  [routerLink]="['/post/detail', post?.id]" class="card-shadow mb-4 not-pointer" >

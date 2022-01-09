@@ -15,7 +15,7 @@ export class PostComponent implements OnInit {
   isFullListDisplayed: boolean = false;
   //
   noOfItemsToShowInitially: number = 10;
-   itemsToLoad: number = 5;
+   itemsToLoad: number = 10;
    itemsToShow:any 
   constructor(private web:WebService,private util:UtilService) { }
 

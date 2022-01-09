@@ -9,7 +9,7 @@ import { UtilService } from 'src/app/sevices/util.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  show:boolean |any;
+  show: boolean = false;
   loginForm:any = FormGroup;
   constructor(private fb: FormBuilder, private auth: AuthService, private router: Router, private util: UtilService) { }
   loginField ={
